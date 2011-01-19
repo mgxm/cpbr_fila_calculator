@@ -1,3 +1,5 @@
 #!/usr/bin env ruby
 
-gem 'sinatra'
+source :rubygems
+
+gem 'sinatra', '>= 1.0'
