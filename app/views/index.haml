@@ -18,15 +18,14 @@
           %a.image_replacement{:href => '#'} Campus Fila - Os últimos serão os primeiros
         %section#time
           %span.date Quinta-feira, 20 de janeiro de 2011
-          %span.time 01:43
+          %span.time #{Time.now.strftime("%H:%M")}
       #content
         %section#status
           %ul.queue
-            - for i in 0..10
-              %li
-                %a{:href => '#'}
-                  %span.value Pegar o busão até Jabaquara...
-                  %span{:class => "size _#{i}"}
+            %li
+              %a{:href => '#'}
+                %span.value Banheiro 
+                %span{:class => "size _#{@banheiro['banheiro']}"}
         
       %footer
         #thanks
