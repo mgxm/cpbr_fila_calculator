@@ -1,3 +1,3 @@
-require File.dirname(__FILE__) + "/boot"
+require File.dirname(__FILE__) + "/filacalculator"
 
 run Sinatra::Application
