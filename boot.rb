@@ -1,6 +1,8 @@
-require 'rubygems'
 require 'sinatra'
+require 'haml'
+
+set :views, File.dirname(__FILE__) + "/app/views/"
 
 get '/' do
-  "cpbr Fila Calculator"
+  haml :index
 end
