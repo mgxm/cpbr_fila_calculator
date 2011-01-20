@@ -8,16 +8,151 @@ body {
   font: normal 13px sans-serif;
   color: #333;
 }
+a {
+  text-decoration: none;
+  color: #333;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+ul {
+  li { list-style-type: none; }
+}
+
+h3 {
+  font-size: 150%;
+  color: #09f;
+}
+
+.image_replacement {
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+}
 
 #wrapper {
   width: 996px;
   header {
+    margin-top: 20px;
     overflow: hidden;
     h1#logo {
       float: left;
+      a.image_replacement {
+        background-image: url(../images/logo.png);
+        width: 213px;
+        height: 151px;
+      }
     }
     section#time {
+      margin-top: 25px;
       float: right;
+      * { display: block; }
+      span.date {
+        font-size: 80%;
+        text-transform: uppercase;
+        color: #666;
+      }
+      span.time {
+        font-size: 600%;
+        text-align: center;
+        color: #09f;
+      }
+    }
+  }
+  #content {
+    margin: 50px auto;
+    section#status {
+      border: 1px solid #ddd;
+      box-shadow: inset 1px 1px 3px #999;
+      /**/
+      -moz-box-shadow: inset 1px 1px 3px #999;
+      -webkit-box-shadow: inset 1px 1px 3px #999;
+      /**/
+      border-radius: 10px;
+      /**/
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      /**/
+      background: #f7f7f7;
+      padding: 5px;
+      ul.queue {
+        margin: 10px;
+        height: 330px;
+        overflow: auto;
+        li {
+          margin: 5px;
+          a {
+            border-radius: 5px;
+            /**/
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            /**/
+            background: #eee;
+            padding: 10px;
+            font-size: 200%;
+            text-transform: lowercase;
+            color: #666;
+            overflow: hidden;
+            display: block;
+            &:hover {
+              background: #e5e5e5;
+            }
+            span.value {
+              width: 700px;
+              display: block;
+              float: left;
+            }
+            span.size {
+              background: url(../images/queue.png);
+              width: 160px;
+              height: 40px;
+              display: block;
+              float: right;
+              &._1 { background-position: 0 -40px; }
+              &._2 { background-position: 0 -80px; }
+              &._3 { background-position: 0 -120px; }
+              &._4 { background-position: 0 -160px; }
+              &._5 { background-position: 0 -200px; }
+              &._6 { background-position: 0 -240px; }
+              &._7 { background-position: 0 -280px; }
+              &._8 { background-position: 0 -320px; }
+              &._9 { background-position: 0 -360px; }
+              &._10 { background-position: 0 -400px; }
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    border-top: 1px dotted #ccc;
+    background: #e7e7e7;
+    padding: 15px 0;
+    text-align: center;
+    overflow: hidden;
+    #thanks {
+      width: 200px;
+      float: left;
+      a {
+        text-decoration: underline;
+        color: #069;
+      }
+    }
+    #twitter {
+      width: 200px;
+      margin-left: 20px;
+      float: left;
+      a {
+        text-decoration: underline;
+        color: #069;
+      }
+      ul {
+        li {
+          margin: 15px 0;
+          text-align: left;
+        }
+      }
     }
   }
 }
