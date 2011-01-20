@@ -4,20 +4,37 @@
     %meta{:charset => 'utf-8'}
     %title Campus Fila - Os últimos serão os primeiros
     %link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/application.css'}
+    %link{:rel => 'shortcut icon', :type => 'text/css', :href => '/images/favicon.png'}
     %script{:type => 'text/javascript'} http://www.google.com/jsapi
     :javascript
       google.load('jquery', '1.4.3');
     %script{:type => 'text/javascript'} /scripts/application.js
+    /[if IE]
+      %script{:type => 'text/javascript'} http://html5shiv.googlecode.com/svn/trunk/html5.js
   %body
     #wrapper
       %header
         %h1#logo
           %a.image_replacement{:href => '#'} Campus Fila - Os últimos serão os primeiros
         %section#time
-          .date Quinta-feira, 20 de janeiro de 2011
-          .time 01:43
+          %span.date Quinta-feira, 20 de janeiro de 2011
+          %span.time 01:43
       #content
-        Content
+        %section#status
+          %ul.queue
+            - for i in 0..10
+              %li
+                %a{:href => '#'}
+                  %span.value Pegar o busão até Jabaquara...
+                  %span{:class => "size _#{i}"}
         
       %footer
+        #thanks
+          %h3 Thanks!
+          Design por <a href="http://twitter.com/caiotarifa" rel="external">@caiotarifa</a>, programado por <a href="http://twitter.com/marciogm" rel="external">@marciogm</a> e <a href="http://twitter.com/matheusca" rel="external">@matheusca</a>.
+        #twitter
+          %h3 Twitter
+          %ul
+            - for i in 1..3 do
+              %li <a href="http://twitter.com/caiotarifa" rel="external">@caiotarifa</a>: Ajudem a divulgar... <a href="http://bit.ly/abc123" rel="external">http://bit.ly/abc123</a> <a href="http://twitter.com/?search=#!/search/%23cpfila" rel="external">#cpfila</a>.
         © 2011 <strong>Campus Fila</strong>. Todos os direitos reservados.
