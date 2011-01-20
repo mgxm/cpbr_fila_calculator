@@ -8,7 +8,7 @@ describe Calculator do
    subject.should have_key('banheiro')
   end
   
-  it 'should return actual status of the area' do
+  it 'return should be a hash' do
     subject.select('banheiro').should be_an_instance_of(Hash)
   end
 
