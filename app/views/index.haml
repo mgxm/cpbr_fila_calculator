@@ -1,0 +1,23 @@
+!!!
+%html{:lang => 'pt-br'}
+  %head
+    %meta{:charset => 'utf-8'}
+    %title Campus Fila - Os últimos serão os primeiros
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/application.css'}
+    %script{:type => 'text/javascript'} http://www.google.com/jsapi
+    :javascript
+      google.load('jquery', '1.4.3');
+    %script{:type => 'text/javascript'} /scripts/application.js
+  %body
+    #wrapper
+      %header
+        %h1#logo
+          %a.image_replacement{:href => '#'} Campus Fila - Os últimos serão os primeiros
+        %section#time
+          .date Quinta-feira, 20 de janeiro de 2011
+          .time 01:43
+      #content
+        Content
+        
+      %footer
+        © 2011 <strong>Campus Fila</strong>. Todos os direitos reservados.
