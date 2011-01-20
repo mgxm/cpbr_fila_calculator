@@ -9,6 +9,7 @@ set :public, File.dirname(__FILE__) + '/public'
 get '/' do
   @calculator = Calculator.new
   @banheiro = @calculator.select('banheiro')
+  @refeitorio = @calculator.select('refeitorio')
   haml :index
 end
 
