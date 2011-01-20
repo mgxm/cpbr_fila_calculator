@@ -1,0 +1,6 @@
+# Campus-Party Fila Calculator
+Veja o tamanho da fila que ira enfrentar conforme o horário atual.
+
+# Ajude
+Quer ajudar a registrar os horários da fila?
+Faça um Fork e adicione os horários no arquivo times.yml
