@@ -6,6 +6,6 @@ Quer ajudar a registrar os horários da fila?
 Faça um Fork e adicione os horários no arquivo times.yml
 
 # Contribuidores
-Marcio Giaxa Marinheiro - [@marciogm](http://www.twitter.com/marciogm)
-Matheus Caceres Silva - [@matheusca](http://www.twitter.com/matheusca)
-Caio Tarifa - [@caiotarifa](http://www.twitter.com/caiotarifa)
+* Marcio Giaxa Marinheiro - [@marciogm](http://www.twitter.com/marciogm)
+* Matheus Caceres Silva - [@matheusca](http://www.twitter.com/matheusca)
+* Caio Tarifa - [@caiotarifa](http://www.twitter.com/caiotarifa)
