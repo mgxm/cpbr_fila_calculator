@@ -21,11 +21,13 @@ class Calculator < Hash
        last_index = index - 1 if index != 0
 
        if time > Time.now.to_i
-         return {@area => [generate_timestamps(params[last_index]), value.split('|')[1]]}
+         return {@area => value.split('|')[1]}
        end
      end
+     last_index = params[params.length-1].split('|')
+     return {@area => last_index[1]}
    end
-
+   
    def generate_timestamps(time)
      time = time.split(':')
      time_now = Time.now
