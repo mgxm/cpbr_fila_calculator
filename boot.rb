@@ -11,5 +11,5 @@ end
 
 get '/stylesheets/application.css' do
   content_type 'text/css', :charset => 'utf-8'
-  sass :'/stylesheets/application'
+  scss :application
 end
