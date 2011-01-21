@@ -17,7 +17,7 @@
         %h1#logo
           %a.image_replacement{:href => '#'} Campus Fila - Os últimos serão os primeiros
         %section#time
-          %span.date Quinta-feira, 20 de janeiro de 2011
+          %span.date= @date 
           %span.time #{Time.now.strftime("%H:%M")}
       #content
         %section#status
