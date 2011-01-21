@@ -7,7 +7,7 @@ require File.dirname(__FILE__) + '/app/models/calculator'
 set :views, File.dirname(__FILE__) + '/app/views'
 set :public, File.dirname(__FILE__) + '/public'
 
-get '/' do
+before do
   @calculator = Calculator.new
   @banheiro = @calculator.select('banheiro')
   @refeitorio = @calculator.select('refeitorio')
@@ -15,6 +15,9 @@ get '/' do
   @bebedouro = @calculator.select('bebedouro') 
   @entrada_principal = @calculator.select('entrada_principal')
   @entrada_camping = @calculator.select('entrada_camping')
+end
+
+get '/' do
   haml :index
 end
 
@@ -25,14 +28,6 @@ end
 
 get '/calculator.json' do
   content_type :json
-
-  @calculator = Calculator.new
-  @banheiro = @calculator.select('banheiro')
-  @refeitorio = @calculator.select('refeitorio')
-  @onibus = @calculator.select('onibus')
-  @bebedouro = @calculator.select('bebedouro') 
-  @entrada_principal = @calculator.select('entrada_principal')
-  @entrada_camping = @calculator.select('entrada_camping')
 
   {
     :hour => Time.now.strftime("%H:%M"), 
