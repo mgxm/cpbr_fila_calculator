@@ -17,35 +17,12 @@
         %h1#logo
           %a.image_replacement{:href => '#'} Campus Fila - Os últimos serão os primeiros
         %section#time
-          %span.date= @date 
-          %span.time #{Time.now.strftime("%H:%M")}
+          %span.date
+          %span.time
       #content
         %section#status
           %ul.queue
-            %li
-              %a{:href => '#'}
-                %span.value Banheiro 
-                %span{:class => "size _#{@banheiro['banheiro']}"}
-            %li
-              %a{:href => '#'}
-                %span.value Refeitório 
-                %span{:class => "size _#{@refeitorio['refeitorio']}"}
-            %li
-              %a{:href => '#'}
-                %span.value Ônibus 
-                %span{:class => "size _#{@onibus['onibus']}"}
-            %li
-              %a{:href => '#'}
-                %span.value Bebedouro 
-                %span{:class => "size _#{@bebedouro['bebedouro']}"}
-            %li
-              %a{:href => '#'}
-                %span.value Entrada Principal 
-                %span{:class => "size _#{@entrada_principal['entrada_principal']}"}
-            %li
-              %a{:href => '#'}
-                %span.value Entrada Camping 
-                %span{:class => "size _#{@entrada_camping['entrada_camping']}"}
+            %li Carregando...
         
       %footer
         © 2011 <strong>Campus Fila</strong>. Todos os direitos reservados.

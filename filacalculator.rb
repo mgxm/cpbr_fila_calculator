@@ -31,8 +31,8 @@ get '/calculator.json' do
   content_type :json
 
   {
-    :hour => Time.now.strftime("%H:%M"), 
     :date => @date,
+    :time => Time.now.strftime("%H:%M"), 
     :status => {
       :banheiro => @banheiro['banheiro'],
       :refeitorio => @refeitorio['refeitorio'],
