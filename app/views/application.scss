@@ -24,6 +24,11 @@ h3 {
   color: #09f;
 }
 
+/* HTML5 */
+header, footer, section {
+  display: block;
+}
+
 .image_replacement {
   background-repeat: no-repeat;
   text-indent: -9999px;
