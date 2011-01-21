@@ -4,6 +4,7 @@ source :rubygems
 
 gem 'sinatra', '>= 1.0'
 gem 'haml'
+gem 'json'
 
 group :test do 
   gem 'rspec'

@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'haml'
 require 'sass'
+require 'json'
 require File.dirname(__FILE__) + '/app/models/calculator'
 
 set :views, File.dirname(__FILE__) + '/app/views'
