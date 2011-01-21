@@ -8,7 +8,7 @@ $(document).ready(function(){
   
   setInterval(function() {
     update();
-  }, 1000);
+  }, 60*1000);
   
   function update() {
     $.getJSON('/calculator.json', function(data) {
