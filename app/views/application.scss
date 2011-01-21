@@ -132,26 +132,10 @@ h3 {
     text-align: center;
     overflow: hidden;
     #thanks {
-      width: 200px;
-      float: left;
+      margin-top: 5px;
       a {
         text-decoration: underline;
         color: #069;
-      }
-    }
-    #twitter {
-      width: 200px;
-      margin-left: 20px;
-      float: left;
-      a {
-        text-decoration: underline;
-        color: #069;
-      }
-      ul {
-        li {
-          margin: 15px 0;
-          text-align: left;
-        }
       }
     }
   }
