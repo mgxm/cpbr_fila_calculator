@@ -114,6 +114,7 @@ header, footer, section {
               height: 40px;
               display: block;
               float: right;
+              &._-1 { background-position: 0 -40px; }
               &._1 { background-position: 0 -40px; }
               &._2 { background-position: 0 -80px; }
               &._3 { background-position: 0 -120px; }
