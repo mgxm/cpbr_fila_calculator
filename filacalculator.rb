@@ -38,7 +38,7 @@ get '/calculator.json' do
       :refeitorio => @refeitorio['refeitorio'],
       :onibus => @onibus['onibus'],
       :bebedouro => @bebedouro['bebedouro'],
-      :"entrada principal" => @entrada_principal['entrada principal'],
+      :"entrada principal" => @entrada_principal['entrada_principal'],
       :"entrada camping" => @entrada_camping['entrada_camping']
     }
   }.to_json
