@@ -25,7 +25,7 @@ h3 {
 }
 
 /* HTML5 */
-header, footer, section {
+header, footer, section, nav {
   display: block;
 }
 
@@ -114,34 +114,56 @@ header, footer, section {
               height: 40px;
               display: block;
               float: right;
-              &._1 { background-position: 0 -40px; }
-              &._2 { background-position: 0 -80px; }
-              &._3 { background-position: 0 -120px; }
-              &._4 { background-position: 0 -160px; }
-              &._5 { background-position: 0 -200px; }
-              &._6 { background-position: 0 -240px; }
-              &._7 { background-position: 0 -280px; }
-              &._8 { background-position: 0 -320px; }
-              &._9 { background-position: 0 -360px; }
-              &._10 { background-position: 0 -400px; }
+              &._-1 { background-position: 0 0; }
+              &._0 { background-position: 0 -40px; }
+              &._1 { background-position: 0 -80px; }
+              &._2 { background-position: 0 -120px; }
+              &._3 { background-position: 0 -160px; }
+              &._4 { background-position: 0 -200px; }
+              &._5 { background-position: 0 -240px; }
+              &._6 { background-position: 0 -280px; }
+              &._7 { background-position: 0 -320px; }
+              &._8 { background-position: 0 -360px; }
+              &._9 { background-position: 0 -400px; }
+              &._10 { background-position: 0 -440px; }
             }
           }
         }
       }
     }
   }
-  footer {
-    border-top: 1px dotted #ccc;
-    background: #e7e7e7;
-    padding: 15px 0;
-    text-align: center;
-    overflow: hidden;
-    #thanks {
-      margin-top: 5px;
-      a {
-        text-decoration: underline;
-        color: #069;
+  nav#social {
+    margin-bottom: 50px;
+    ul {
+      overflow: hidden;
+      li {
+        width: 165px;
+        margin: 3px 0;
+        float: left;
+        a {
+          border-bottom: 1px dotted #069;
+          color: #069;
+          &:hover {
+            text-decoration: none;
+            color: #09c;
+          }
+        }
       }
+    }
+  }
+}
+footer {
+  border-top: 1px dotted #ccc;
+  background: #e7e7e7;
+  min-width: 996px;
+  padding: 15px 0;
+  text-align: center;
+  overflow: hidden;
+  #thanks {
+    margin-top: 5px;
+    a {
+      text-decoration: underline;
+      color: #069;
     }
   }
 }

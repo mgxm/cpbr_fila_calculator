@@ -34,12 +34,12 @@ get '/calculator.json' do
     :date => @date,
     :time => Time.now.strftime("%H:%M"), 
     :status => {
-      :banheiro => @banheiro['banheiro'],
-      :refeitorio => @refeitorio['refeitorio'],
-      :onibus => @onibus['onibus'],
-      :bebedouro => @bebedouro['bebedouro'],
-      :"entrada principal" => @entrada_principal['entrada principal'],
-      :"entrada camping" => @entrada_camping['entrada_camping']
+      :"Banheiro" => @banheiro['banheiro'],
+      :"Refeitório" => @refeitorio['refeitorio'],
+      :"Ônibus até Jabaquara" => @onibus['onibus'],
+      :"Bebedouro" => @bebedouro['bebedouro'],
+      :"Stands » Arena" => @entrada_principal['entrada_principal'],
+      :"Camping » Arena" => @entrada_camping['entrada_camping']
     }
   }.to_json
 end
