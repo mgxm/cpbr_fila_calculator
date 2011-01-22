@@ -9,7 +9,8 @@
     :javascript
       google.load('jquery', '1.4.3');
     %script{:type => 'text/javascript', :src => '/scripts/application.js'}
-    %script{:type => 'text/javascript', :src => 'http://html5shiv.googlecode.com/svn/trunk/html5.js'}
+    /[if IE]
+      %script{:type => 'text/javascript', :src => 'http://html5shiv.googlecode.com/svn/trunk/html5.js'}
   %body
     #wrapper
       %header
